@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PR2.OMR.OMR">
+    <Position X="8.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABACAAQACAAASCACJAAAUAEACAAAQAAAgAAAAAgAgAg=</HashCode>
+      <FileName>OMR.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="processdata" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PR2.OMR.DataProcess">
+    <Position X="12.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAABCAQAQAAAAAAAAAAAAAACAAAAQQA=</HashCode>
+      <FileName>DataProcess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PR2.OMR.Main">
+    <Position X="4.75" Y="0.5" Width="3" />
+    <Members>
+      <Field Name="aboutToolStripMenuItem" Hidden="true" />
+      <Field Name="comboBoxMain" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="coursesBindingSource" Hidden="true" />
+      <Field Name="coursesTableAdapter" Hidden="true" />
+      <Field Name="coursesToolStripMenuItem" Hidden="true" />
+      <Field Name="dBDataSet" Hidden="true" />
+      <Field Name="detectStaticToolStripMenuItem" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="edgeToolStripMenuItem" Hidden="true" />
+      <Field Name="exitToolStripMenuItem" Hidden="true" />
+      <Field Name="fileToolStripMenuItem" Hidden="true" />
+      <Field Name="gradeToolStripMenuItem" Hidden="true" />
+      <Field Name="imageBox1" Hidden="true" />
+      <Field Name="imageBox2" Hidden="true" />
+      <Field Name="infoToolStripMenuItem" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="loadAnswersImageToolStripMenuItem" Hidden="true" />
+      <Field Name="loadStudentImageToolStripMenuItem" Hidden="true" />
+      <Field Name="menuStrip" Hidden="true" />
+      <Field Name="openFolderToolStripMenuItem" Hidden="true" />
+      <Field Name="openToolStripMenuItem" Hidden="true" />
+      <Field Name="progressBar" Hidden="true" />
+      <Field Name="reportsToolStripMenuItem" Hidden="true" />
+      <Field Name="resultsBindingSource" Hidden="true" />
+      <Field Name="resultsTableAdapter1" Hidden="true" />
+      <Field Name="resultsToolStripMenuItem" Hidden="true" />
+      <Field Name="scanToolStripMenuItem" Hidden="true" />
+      <Field Name="setupToolStripMenuItem" Hidden="true" />
+      <Field Name="studentsTableAdapter1" Hidden="true" />
+      <Field Name="studentToolStripMenuItem" Hidden="true" />
+      <Field Name="twain" Hidden="true" />
+      <Field Name="viewresultToolStripMenuItem" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BIaBXDgYSGCgUtIADoCDHRwTOQpCASAEQkRgSFpAjhY=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="omr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PR2.OMR.Setup">
+    <Position X="2" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="apply" Hidden="true" />
+      <Field Name="btnDefault" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="key_upload" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="match_upload" Hidden="true" />
+      <Field Name="numeric_IdRadius" Hidden="true" />
+      <Field Name="numeric_QuesRadius" Hidden="true" />
+      <Field Name="numeric_x" Hidden="true" />
+      <Field Name="numeric_y" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+      <Field Name="textBox2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACAAEAAAACACABAAAAGAAAICQEAgAAAEMAAAFAAAAFA=</HashCode>
+      <FileName>Setup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="frm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PR2.OMR.ResultsUI">
+    <Position X="1.5" Y="9" Width="3" />
+    <Members>
+      <Field Name="cancel" Hidden="true" />
+      <Field Name="comboBoxResult" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="coursesBindingSource" Hidden="true" />
+      <Field Name="coursesTableAdapter" Hidden="true" />
+      <Field Name="dBDataSet" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="firstnametxtbox" Hidden="true" />
+      <Field Name="id_textBox" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="lastnametxtbox" Hidden="true" />
+      <Field Name="lblSaved" Hidden="true" />
+      <Field Name="lv" Hidden="true" />
+      <Field Name="mark_textBox" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="resultsTableAdapter1" Hidden="true" />
+      <Field Name="SaveBtn" Hidden="true" />
+      <Field Name="studentsTableAdapter1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AERAABEAgCAgABQAAkCAARACIAhAAQIAAAAAARAAigM=</HashCode>
+      <FileName>ResultsUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PR2.OMR.Students">
+    <Position X="8" Y="6.5" Width="3.25" />
+    <Members>
+      <Field Name="bindingNavigatorAddNewItem" Hidden="true" />
+      <Field Name="bindingNavigatorCountItem" Hidden="true" />
+      <Field Name="bindingNavigatorDeleteItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveFirstItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveLastItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveNextItem" Hidden="true" />
+      <Field Name="bindingNavigatorMovePreviousItem" Hidden="true" />
+      <Field Name="bindingNavigatorPositionItem" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator1" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator2" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn1" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn3" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn4" Hidden="true" />
+      <Field Name="dBDataSet" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="studentsBindingNavigator" Hidden="true" />
+      <Field Name="studentsBindingNavigatorSaveItem" Hidden="true" />
+      <Field Name="studentsBindingSource" Hidden="true" />
+      <Field Name="studentsDataGridView" Hidden="true" />
+      <Field Name="studentsTableAdapter" Hidden="true" />
+      <Field Name="tableAdapterManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAQAIAAgLAIBANAIgSEIAQSAAAAAAAAAAAAADQBAAQ=</HashCode>
+      <FileName>Students.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PR2.OMR.Results">
+    <Position X="8" Y="8.25" Width="3" />
+    <Members>
+      <Field Name="bindingNavigatorAddNewItem" Hidden="true" />
+      <Field Name="bindingNavigatorCountItem" Hidden="true" />
+      <Field Name="bindingNavigatorDeleteItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveFirstItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveLastItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveNextItem" Hidden="true" />
+      <Field Name="bindingNavigatorMovePreviousItem" Hidden="true" />
+      <Field Name="bindingNavigatorPositionItem" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator1" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator2" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="CourseCombo" Hidden="true" />
+      <Field Name="coursesBindingSource" Hidden="true" />
+      <Field Name="coursesTableAdapter" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn2" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn3" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn4" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn5" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn6" Hidden="true" />
+      <Field Name="dBDataSet" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="errorProvider1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="labelSID" Hidden="true" />
+      <Field Name="resultsBindingNavigator" Hidden="true" />
+      <Field Name="resultsBindingNavigatorSaveItem" Hidden="true" />
+      <Field Name="resultsBindingSource" Hidden="true" />
+      <Field Name="resultsDataGridView" Hidden="true" />
+      <Field Name="resultsTableAdapter" Hidden="true" />
+      <Field Name="SIDtxtbox" Hidden="true" />
+      <Field Name="tableAdapterManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CyAQwICAhCAIBBOBogCEIEASAAgIAAAAAAAAEBQBDAQ=</HashCode>
+      <FileName>Results.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PR2.OMR.Courses">
+    <Position X="8" Y="10.5" Width="3" />
+    <Members>
+      <Field Name="bindingNavigatorAddNewItem" Hidden="true" />
+      <Field Name="bindingNavigatorCountItem" Hidden="true" />
+      <Field Name="bindingNavigatorDeleteItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveFirstItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveLastItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveNextItem" Hidden="true" />
+      <Field Name="bindingNavigatorMovePreviousItem" Hidden="true" />
+      <Field Name="bindingNavigatorPositionItem" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator1" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator2" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="coursesBindingNavigator" Hidden="true" />
+      <Field Name="coursesBindingNavigatorSaveItem" Hidden="true" />
+      <Field Name="coursesBindingSource" Hidden="true" />
+      <Field Name="coursesDataGridView" Hidden="true" />
+      <Field Name="coursesTableAdapter" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn1" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn2" Hidden="true" />
+      <Field Name="dBDataSet" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="tableAdapterManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAQAIIAgDAABAOCIgCEIAAaAAgAAAAAQAAAAAQBGAA=</HashCode>
+      <FileName>Courses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PR2.OMR.ExportToExcel">
+    <Position X="11.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ExportToExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

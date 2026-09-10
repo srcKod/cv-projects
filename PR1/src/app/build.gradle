@@ -1,0 +1,109 @@
+apply plugin: 'com.android.model.application'
+model {
+    android {
+        compileSdkVersion 23
+        buildToolsVersion "23.0.3"
+
+        defaultConfig.with {
+            applicationId "pr1.svu.com.money"
+            minSdkVersion.apiLevel  15
+            targetSdkVersion.apiLevel  23
+            versionCode 1
+            versionName "1.0"
+        }
+        buildTypes {
+            release {
+                minifyEnabled  false
+                proguardFiles.add(file("proguardFiles-rules.pro"))
+            }
+        }
+
+        // NDK Script
+        ndk {
+            moduleName = "detection" // Name of C++ module
+            toolchain = 'clang'
+            // Extra flags to allow C++11 functionality and give
+            // to the C preprocessor. Add C++ exceptions support
+            // and RunTime Type Information
+            cppFlags.addAll(["-std=c++11","-fexceptions","-frtti","-Wall"])
+
+            // Used in the compiler call, which we use to define include paths
+            //* You Should put your local openCV current path here ..
+            cppFlags.add("-I${file("C:/OpenCV-android-sdk/sdk/native/jni/include")}".toString())
+            cppFlags.add("-I${file("C:/OpenCV-android-sdk/sdk/native/jni/include/opencv")}".toString())
+            cppFlags.add("-I${file("C:/OpenCV-android-sdk/sdk/native/jni/include/opencv2")}".toString())
+
+            // Library flags or names given to compilers when they are supposed to invoke the linker,
+            ldLibs.addAll(["android", "EGL", "GLESv2", "dl", "log", "z"])
+
+            // Use GNU libstdc++ as a static library
+            // to make support to EXCEPTIONS and RTTI
+            stl = "gnustl_static"
+        }
+
+        // To generate different APKs to be released for different CPU architectures
+        productFlavors {
+            create("arm") {
+                ndk.with {
+                    abiFilters.add("armeabi")
+
+                    File curDir = file('./')
+                    curDir = file(curDir.absolutePath)
+                    String libsDir = curDir.absolutePath + "/src/main/jniLibs/armeabi/"
+
+                    ldLibs.add(libsDir + "libopencv_java3.so")
+
+                }
+            }
+            create("armv7") {
+                ndk.with {
+                    abiFilters.add("armeabi-v7a")
+
+                    File curDir = file('./')
+                    curDir = file(curDir.absolutePath)
+                    String libsDir = curDir.absolutePath + "/src/main/jniLibs/armeabi-v7a/"
+
+                    ldLibs.add(libsDir + "libopencv_java3.so")
+
+                }
+            }
+            create("x86") {
+                ndk.with {
+                    abiFilters.add("x86")
+
+                    File curDir = file('./')
+                    curDir = file(curDir.absolutePath)
+                    String libsDir = curDir.absolutePath + "/src/main/jniLibs/x86/"
+
+                    ldLibs.add(libsDir + "libopencv_java3.so")
+
+                }
+            }
+            create("mips") {
+                ndk.with {
+                    abiFilters.add("mips")
+
+                    File curDir = file('./')
+                    curDir = file(curDir.absolutePath)
+                    String libsDir = curDir.absolutePath + "/src/main/jniLibs/mips/"
+
+                    ldLibs.add(libsDir + "libopencv_java3.so")
+
+                }
+            }
+            create("fat") {
+
+            }
+            // All ABI
+            //create("all")
+
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile project(':openCVLibrary310')
+}

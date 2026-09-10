@@ -1,0 +1,36 @@
+# Build artifacts and IDE files — only source code and documentation are tracked.
+
+### Android / Android Studio / IntelliJ
+*.iml
+.idea/
+.gradle/
+**/build/
+captures/
+local.properties
+*.apk
+*.ap_
+*.dex
+
+# Android NDK build outputs (rebuilt from C++ sources in app/src/main/jni/)
+obj/
+*.so
+
+### Visual Studio / .NET
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.pdb
+
+# NuGet packages (restored via "nuget restore" or Visual Studio)
+packages/
+
+### OS / general
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+### Project specific
+**/tmp/
+**/output/
